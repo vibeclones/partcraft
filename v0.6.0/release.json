@@ -1,0 +1,37 @@
+{
+    "format": "cadcraft-edition",
+    "version": 1,
+    "app": "partcraft",
+    "name": "PartCraft",
+    "edition": "browser",
+    "release": "0.6",
+    "semver": "0.6.0",
+    "tag": "partcraft-v0.6.0",
+    "zip": "partcraft-browser-edition-v0.6.0.zip",
+    "packed_at": "2026-10-19T00:04:15Z",
+    "from": {
+        "build": "0.6",
+        "released_at": "2026-10-19 00:03 UTC",
+        "git": "28f3444 (dev had uncommitted changes)"
+    },
+    "license": "Apache-2.0",
+    "libs": {
+        "cpython-wasi": "3.14.7",
+        "h5wasm": "0.10.3",
+        "manifold-3d": "3.5.4",
+        "noble-ciphers": "2.4.0",
+        "noble-curves": "2.4.0",
+        "noble-hashes": "2.4.0",
+        "three": "0.186.1",
+        "wasmoon": "1.16.0",
+        "bootstrap": "5.3.8",
+        "bootstrap-icons": "1.13.2",
+        "archivo": "5.2.8"
+    },
+    "changes_to_copied_files": [
+        "Library URLs written as /assets/vendor/<lib>/current/ are pinned to the versions listed in release.json."
+    ],
+    "files": 336,
+    "bytes_before_this_file": 30456985,
+    "notes": "PartCraft is quicker to sketch and change: type sizes as you draw (each becomes a dimension), drag handles on an Extrude or Revolve, Extrude from it, Cut into it or Hole here from a picked face, values right in the history (double-click or F2 to change them), base planes that step back once a part has a solid, and repeated relations in one row. Export › Nest flat parts on sheets… nests plates or a roll with grain, turns and spacing, small parts in big parts' holes, and saves DXF for the laser or waterjet. Tolerance stack-ups in assemblies give worst case, RSS, parts per million outside your limits and which dimensions matter most, from ISO 2768, the drawing's GD&T or typed values. The CraftScript library gains frame3d. A second round adds configurations that turn features off and permanent magnets in 2-D magnetics. An assembly with a stack-up (assembly file version 5) or a part whose configuration turns features off (part file version 4) won't open in PartCraft 0.5. Fixed: a single typed digit plus Enter did nothing. Every app gets Show bars, Reset the layout, a toolbar menu, an interface size and pen and touch. Spanish (es-MX) and, new, Bahasa Indonesia are machine-made drafts, not yet reviewed."
+}

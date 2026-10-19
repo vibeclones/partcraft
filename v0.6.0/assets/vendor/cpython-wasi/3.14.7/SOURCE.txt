@@ -1,0 +1,23 @@
+CPython 3.14.7 for WebAssembly (WASI preview 1), for PartCraft's Python scripts (cs-lang-python.js).
+
+From: https://github.com/brettcannon/cpython-wasi-build/releases/download/v3.14.7/python-3.14.7-wasi_sdk-24.zip
+      sha256 2e064d3fb8172471d39d741348efa722349c40b96301f69968dff714999c584b
+      built from CPython's own sources (tag v3.14.7) with its Tools/wasm scripts and wasi-sdk 24; the build project is MIT
+      (https://github.com/brettcannon/cpython-wasi-build). CPython: https://github.com/python/cpython/tree/v3.14.7
+
+Licenses: CPython is under the PSF License Version 2 (LICENSE, with the licenses of the code it includes: libmpdec,
+expat, HACL*, …). wasi-libc, linked in by the WASI SDK, is under Apache-2.0 WITH LLVM-exception, Apache-2.0 or MIT, with
+parts under MIT (musl), BSD-2-Clause (cloudlibc) and CC0 (dlmalloc) (LICENSE-wasi-libc.txt). No MPL, no GPL.
+
+Changed, by tools/partcraft-python/vendor.mjs (run it on the zip above to make these files again):
+  python.wasm        the zip's python.wasm (30522756 bytes) without its custom sections (DWARF debug info,
+                     the name section, producers); code and data unchanged
+  python-stdlib.zip  lib/python3.14 without idlelib, tkinter, turtledemo, turtle.py, ensurepip, pydoc_data, _pyrepl, venv, sqlite3, curses, dbm, __phello__, test, site-packages, lib-dynload;
+                     492 files kept (45 left out); each module compiled to .pyc by this python.wasm
+                     (python -m compileall -b -o 0) and its .py left out; data files as they are
+
+sha256 of these files:
+  7d445e83f8879daf536925ef7c5e068fce9fde0badff3c8ec7b27ddf30691cd3  python.wasm
+  eebef3c49e4a17f610834e6e39effcbbbd0b16a03419bb706f62bbf8d9387557  python-stdlib.zip
+  b0e25a78cffb43f4d92de8b61ccfa1f1f98ecbc22330b54b5251e7b6ba010231  LICENSE
+  2f729cb5ef27ab731e3701dd0675cd153bf8318a43bff395ce0f0a7be3eb1ffb  LICENSE-wasi-libc.txt
