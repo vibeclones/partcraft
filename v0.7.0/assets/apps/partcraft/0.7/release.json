@@ -1,0 +1,17 @@
+{
+    "app": "partcraft",
+    "version": "0.7",
+    "released_at": "2026-10-25 01:38 UTC",
+    "git": "d5ef8b8 (dev had uncommitted changes)",
+    "libs": {
+        "cpython-wasi": "3.14.7",
+        "h5wasm": "0.10.3",
+        "manifold-3d": "3.5.4",
+        "noble-ciphers": "2.4.0",
+        "noble-curves": "2.4.0",
+        "noble-hashes": "2.4.0",
+        "three": "0.186.1",
+        "wasmoon": "1.16.0"
+    },
+    "notes": "Release 0.7 (notes: docs/releases/0.7.md)"
+}
