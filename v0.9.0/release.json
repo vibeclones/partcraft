@@ -1,0 +1,38 @@
+{
+    "format": "cadcraft-edition",
+    "version": 1,
+    "app": "partcraft",
+    "name": "PartCraft",
+    "edition": "browser",
+    "release": "0.9",
+    "semver": "0.9.0",
+    "tag": "partcraft-v0.9.0",
+    "zip": "partcraft-browser-edition-v0.9.0.zip",
+    "packed_at": "2026-11-09T03:33:08Z",
+    "from": {
+        "build": "0.9",
+        "released_at": "2026-11-09 00:44 UTC",
+        "git": "154cc96 (dev had uncommitted changes)"
+    },
+    "license": "Apache-2.0",
+    "libs": {
+        "cpython-wasi": "3.14.7",
+        "h5wasm": "0.10.3",
+        "kiri-moto": "4.7.3",
+        "manifold-3d": "3.5.4",
+        "noble-ciphers": "2.4.0",
+        "noble-curves": "2.4.0",
+        "noble-hashes": "2.4.0",
+        "three": "0.186.1",
+        "wasmoon": "1.16.0",
+        "bootstrap": "5.3.8",
+        "bootstrap-icons": "1.13.2",
+        "archivo": "5.2.8"
+    },
+    "changes_to_copied_files": [
+        "Library URLs written as /assets/vendor/<lib>/current/ are pinned to the versions listed in release.json."
+    ],
+    "files": 1560,
+    "bytes_before_this_file": 260372672,
+    "notes": ""
+}
